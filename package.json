@@ -1,0 +1,27 @@
+{
+  "name": "nanogl-primitives-2d",
+  "version": "0.1.0",
+  "description": "2d Primitives for nanogl",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plepers/nanogl-primitives-2d.git"
+  },
+  "keywords": [
+    "nanogl",
+    "2d",
+    "primitives"
+  ],
+  "author": "Pierre Lepers",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/plepers/nanogl-primitives-2d/issues"
+  },
+  "homepage": "https://github.com/plepers/nanogl-primitives-2d#readme",
+  "dependencies": {
+    "nanogl": "^0.1.6"
+  }
+}
