@@ -13,9 +13,9 @@ function RectOutline( gl, x, y, w, h, thickness ){
   w = (w===undefined) ?  2.0 : w;
   h = (h===undefined) ?  2.0 : h;
 
-  thickness = (thickness===undefined) ?  .1 : thickness;
+  thickness = (thickness===undefined) ?  0.1 : thickness;
 
-  RectOutline.call( this, gl );
+  GLArrayBuffer.call( this, gl );
 
   var a = TMP_ARRAY;
   var b = y+h, r = x+w;
@@ -56,3 +56,6 @@ RectOutline.prototype.constructor = RectOutline;
 RectOutline.prototype.render = function(){
   this.drawTriangleStrip();
 };
+
+
+module.exports = RectOutline;

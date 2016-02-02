@@ -14,7 +14,7 @@ function Rect( gl, x, y, w, h ){
   w = (w===undefined) ?  2.0 : w;
   h = (h===undefined) ?  2.0 : h;
 
-  Rect.call( this, gl );
+  GLArrayBuffer.call( this, gl );
 
   var a = TMP_ARRAY;
   a[0]  = a[4]  = x;
@@ -36,3 +36,5 @@ Rect.prototype.constructor = Rect;
 Rect.prototype.render = function(){
   this.drawTriangleStrip();
 };
+
+module.exports = Rect;
