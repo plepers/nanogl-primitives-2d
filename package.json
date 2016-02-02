@@ -1,6 +1,6 @@
 {
   "name": "nanogl-primitives-2d",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "2d Primitives for nanogl",
   "main": "index.js",
   "scripts": {
