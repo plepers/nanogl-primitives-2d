@@ -93,12 +93,12 @@ module.exports = function (config) {
         webgl2: true
       },
       
-      'SL_Safari_12': {
-        base: 'SauceLabs',
-        browserName: 'safari',
-        platform: 'macOS 10.14',
-        version: '12.0'
-      },
+      // 'SL_Safari_12': {
+      //   base: 'SauceLabs',
+      //   browserName: 'safari',
+      //   platform: 'macOS 10.14',
+      //   version: '12.0'
+      // },
 
       //Win 8.1
       'SL_Chrome78_WIN10': {
@@ -110,13 +110,13 @@ module.exports = function (config) {
       },
 
 
-      'SL_Chrome65_WIN10': {
-        base: 'SauceLabs',
-        browserName: 'chrome',
-        version: '65.0',
-        platform: 'Windows 10',
-        webgl2: true
-      },
+      // 'SL_Chrome65_WIN10': {
+      //   base: 'SauceLabs',
+      //   browserName: 'chrome',
+      //   version: '65.0',
+      //   platform: 'Windows 10',
+      //   webgl2: true
+      // },
 
       // 'SL_Firefox_WIN81': {
       //   base: 'SauceLabs',
@@ -144,18 +144,18 @@ module.exports = function (config) {
       //   version: '31',
       //   platform: 'OS X 10.9'
       // },
-      'SL_win10_Edge': {
-        base: 'SauceLabs',
-        browserName: 'MicrosoftEdge',
-        platform: 'Windows 10',
-        version: '18.17763'
-      },
-      'SL_win10_FF': {
-        base: 'SauceLabs',
-        browserName: 'firefox',
-        platform: 'Windows 10',
-        version: '70.0'
-      },
+      // 'SL_win10_Edge': {
+      //   base: 'SauceLabs',
+      //   browserName: 'MicrosoftEdge',
+      //   platform: 'Windows 10',
+      //   version: '18.17763'
+      // },
+      // 'SL_win10_FF': {
+      //   base: 'SauceLabs',
+      //   browserName: 'firefox',
+      //   platform: 'Windows 10',
+      //   version: '70.0'
+      // },
     },
   });
 
