@@ -1,4 +1,4 @@
-import GLArrayBuffer = require( 'nanogl/arraybuffer' );
+import GLArrayBuffer from 'nanogl/arraybuffer'
 import { GLContext } from 'nanogl/types';
 
 const TMP_ARRAY = new Float32Array( [
@@ -9,7 +9,7 @@ const TMP_ARRAY = new Float32Array( [
 ] );
 
 
-class Rect extends GLArrayBuffer {
+export default class Rect extends GLArrayBuffer {
   
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2 ){
     
@@ -34,5 +34,3 @@ class Rect extends GLArrayBuffer {
   }
 
 }
-
-export = Rect

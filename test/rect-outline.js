@@ -1,5 +1,5 @@
-var RectOutline        = require( '../rect-outline' );
-var Program     = require( 'nanogl/program' );
+import RectOutline from '../rect-outline'
+import Program from 'nanogl/program'
 
 var expect      = require( 'expect.js' );
 

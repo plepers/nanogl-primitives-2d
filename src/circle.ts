@@ -1,9 +1,9 @@
-import GLArrayBuffer = require( 'nanogl/arraybuffer' );
+import GLArrayBuffer from 'nanogl/arraybuffer';
 import { GLContext } from 'nanogl/types';
 
 
 
-class Circle extends GLArrayBuffer {
+export default class Circle extends GLArrayBuffer {
 
   constructor( gl : GLContext, radius : number = 1.0, segs : number = 32 ){
 
@@ -37,5 +37,3 @@ class Circle extends GLArrayBuffer {
   }
 
 }
-
-export = Circle

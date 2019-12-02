@@ -1,6 +1,5 @@
-"use strict";
-const GLArrayBuffer = require("nanogl/arraybuffer");
-class Circle extends GLArrayBuffer {
+import GLArrayBuffer from 'nanogl/arraybuffer';
+export default class Circle extends GLArrayBuffer {
     constructor(gl, radius = 1.0, segs = 32) {
         super(gl);
         const a = new Float32Array((segs + 2) << 2);
@@ -23,4 +22,3 @@ class Circle extends GLArrayBuffer {
         this.drawTriangleFan();
     }
 }
-module.exports = Circle;
