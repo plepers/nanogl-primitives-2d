@@ -1,9 +1,9 @@
-import GLArrayBuffer = require('nanogl/arraybuffer');
+import GLArrayBuffer from 'nanogl/arraybuffer';
 import { GLContext } from 'nanogl/types';
 
 
 
-class CircleOutline extends GLArrayBuffer {
+export default class CircleOutline extends GLArrayBuffer {
 
 
   constructor(gl: GLContext, radius: number = 1.0, segs: number = 32, thickness: number = 0.1) {
@@ -47,5 +47,3 @@ class CircleOutline extends GLArrayBuffer {
   }
 
 }
-
-export = CircleOutline

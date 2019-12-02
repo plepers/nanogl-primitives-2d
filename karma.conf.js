@@ -33,7 +33,8 @@ module.exports = function (config) {
     browserify: {
       debug: true,
       transform: [
-        ['stringify', { 'extensions': ['.vert', '.frag'] }]
+        ['stringify', { 'extensions': ['.vert', '.frag'] }],
+        ["babelify", { "presets": ["@babel/preset-env"] }]
       ]
     },
 

@@ -1,4 +1,4 @@
-import GLArrayBuffer = require( 'nanogl/arraybuffer' );
+import GLArrayBuffer from 'nanogl/arraybuffer'
 import { GLContext } from 'nanogl/types';
 
 const TMP_ARRAY = new Float32Array( 50 );
@@ -8,7 +8,7 @@ TMP_ARRAY[33] = TMP_ARRAY[23] = 1;
 TMP_ARRAY[ 4] = TMP_ARRAY[14] = TMP_ARRAY[24] = TMP_ARRAY[34] = TMP_ARRAY[44] = 1;
 
 
-class RectOutline extends GLArrayBuffer {
+export default class RectOutline extends GLArrayBuffer {
 
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2, thickness : number = .1 ){
 
@@ -52,5 +52,3 @@ class RectOutline extends GLArrayBuffer {
 
 }
 
-
-export = RectOutline

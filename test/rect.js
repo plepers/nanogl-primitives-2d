@@ -1,5 +1,5 @@
-var Rect        = require( '../rect' );
-var Program     = require( 'nanogl/program' );
+import Rect        from '../rect' 
+import Program     from 'nanogl/program' 
 
 var expect      = require( 'expect.js' );
 

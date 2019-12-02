@@ -1,10 +1,9 @@
-"use strict";
-const GLArrayBuffer = require("nanogl/arraybuffer");
+import GLArrayBuffer from 'nanogl/arraybuffer';
 const TMP_ARRAY = new Float32Array(50);
 TMP_ARRAY[12] = TMP_ARRAY[22] = 1;
 TMP_ARRAY[33] = TMP_ARRAY[23] = 1;
 TMP_ARRAY[4] = TMP_ARRAY[14] = TMP_ARRAY[24] = TMP_ARRAY[34] = TMP_ARRAY[44] = 1;
-class RectOutline extends GLArrayBuffer {
+export default class RectOutline extends GLArrayBuffer {
     constructor(gl, x = -1, y = -1, w = 2, h = 2, thickness = .1) {
         super(gl);
         var a = TMP_ARRAY;
@@ -32,4 +31,3 @@ class RectOutline extends GLArrayBuffer {
         this.drawTriangleStrip();
     }
 }
-module.exports = RectOutline;

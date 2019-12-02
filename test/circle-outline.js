@@ -1,5 +1,5 @@
-var CircleOutline = require( '../circle-outline' );
-var Program       = require( 'nanogl/program' );
+import CircleOutline from '../circle-outline'
+import Program       from 'nanogl/program'
 var expect        = require( 'expect.js' );
 var testContext   = require( './utils/TestContext' );
 

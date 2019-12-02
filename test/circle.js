@@ -1,5 +1,5 @@
-var Circle        = require( '../circle' );
-var Program     = require( 'nanogl/program' );
+import Circle       from '../circle'
+import Program    from 'nanogl/program'
 
 var expect      = require( 'expect.js' );
 
