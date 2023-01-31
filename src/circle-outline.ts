@@ -2,7 +2,10 @@ import GLArrayBuffer from 'nanogl/arraybuffer';
 import { GLContext } from 'nanogl/types';
 
 
-
+/**
+ * Create an outlined circle geometry
+ * @public
+ */
 export default class CircleOutline extends GLArrayBuffer {
 
 
@@ -42,6 +45,9 @@ export default class CircleOutline extends GLArrayBuffer {
   }
 
 
+  /**
+   * Render the outlined circle
+   */
   render() {
     this.drawTriangleStrip();
   }

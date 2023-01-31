@@ -8,6 +8,10 @@ TMP_ARRAY[33] = TMP_ARRAY[23] = 1;
 TMP_ARRAY[ 4] = TMP_ARRAY[14] = TMP_ARRAY[24] = TMP_ARRAY[34] = TMP_ARRAY[44] = 1;
 
 
+/**
+ * Create an outlined rectangle geometry
+ * @public
+ */
 export default class RectOutline extends GLArrayBuffer {
 
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2, thickness : number = .1 ){
@@ -46,6 +50,9 @@ export default class RectOutline extends GLArrayBuffer {
 
   }
 
+  /**
+   * Render the outlined rectangle
+   */
   render(){
     this.drawTriangleStrip();
   }

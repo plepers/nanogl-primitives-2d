@@ -9,6 +9,10 @@ const TMP_ARRAY = new Float32Array( [
 ] );
 
 
+/**
+ * Create a rectangle geometry
+ * @public
+ */
 export default class Rect extends GLArrayBuffer {
   
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2 ){
@@ -29,6 +33,9 @@ export default class Rect extends GLArrayBuffer {
   }
 
 
+  /**
+   * Render the rectangle
+   */
   render(){
     this.drawTriangleStrip();
   }

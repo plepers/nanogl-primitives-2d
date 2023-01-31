@@ -2,7 +2,10 @@ import GLArrayBuffer from 'nanogl/arraybuffer';
 import { GLContext } from 'nanogl/types';
 
 
-
+/**
+ * Create a circle geometry
+ * @public
+ */
 export default class Circle extends GLArrayBuffer {
 
   constructor( gl : GLContext, radius : number = 1.0, segs : number = 32 ){
@@ -32,6 +35,9 @@ export default class Circle extends GLArrayBuffer {
   }
 
 
+  /**
+   * Render the circle
+   */
   render(){
     this.drawTriangleFan();
   }
