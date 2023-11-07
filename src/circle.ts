@@ -3,7 +3,7 @@ import { GLContext } from 'nanogl/types';
 
 
 /**
- * Create a circle geometry
+ * Creates a circle geometry
  * @public
  */
 export default class Circle extends GLArrayBuffer {
