@@ -40,6 +40,7 @@ export default class Rect extends GLArrayBuffer {
 
   /**
    * Draw the rectangle.
+   * You need to link a program before calling this method.
    */
   render(){
     this.drawTriangleStrip();

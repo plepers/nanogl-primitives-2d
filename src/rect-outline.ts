@@ -58,6 +58,7 @@ export default class RectOutline extends GLArrayBuffer {
 
   /**
    * Draw the rectangle outline.
+   * You need to link a program before calling this method.
    */
   render(){
     this.drawTriangleStrip();

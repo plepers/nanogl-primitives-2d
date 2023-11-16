@@ -40,6 +40,7 @@ export default class Circle extends GLArrayBuffer {
 
   /**
    * Draw the circle.
+   * You need to link a program before calling this method.
    */
   render(){
     this.drawTriangleFan();

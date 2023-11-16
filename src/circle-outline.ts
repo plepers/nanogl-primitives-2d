@@ -50,6 +50,7 @@ export default class CircleOutline extends GLArrayBuffer {
 
   /**
    * Draw the circle outline.
+   * You need to link a program before calling this method.
    */
   render() {
     this.drawTriangleStrip();

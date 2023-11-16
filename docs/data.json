@@ -39,7 +39,7 @@
 									"fileName": "src/circle.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle.ts#L14"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle.ts#L14"
 								}
 							],
 							"signatures": [
@@ -1212,9 +1212,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle.ts",
-									"line": 44,
+									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle.ts#L44"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle.ts#L45"
 								}
 							],
 							"signatures": [
@@ -1228,7 +1228,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Draw the circle."
+												"text": "Draw the circle.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -1355,7 +1355,7 @@
 							"fileName": "src/circle.ts",
 							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle.ts#L8"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -1381,7 +1381,7 @@
 					"fileName": "src/circle.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle.ts#L1"
 				}
 			]
 		},
@@ -1419,7 +1419,7 @@
 									"fileName": "src/circle-outline.ts",
 									"line": 15,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle-outline.ts#L15"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle-outline.ts#L15"
 								}
 							],
 							"signatures": [
@@ -2612,9 +2612,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle-outline.ts",
-									"line": 54,
+									"line": 55,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle-outline.ts#L54"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle-outline.ts#L55"
 								}
 							],
 							"signatures": [
@@ -2628,7 +2628,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Draw the circle outline."
+												"text": "Draw the circle outline.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -2755,7 +2755,7 @@
 							"fileName": "src/circle-outline.ts",
 							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle-outline.ts#L8"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle-outline.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -2781,7 +2781,7 @@
 					"fileName": "src/circle-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/circle-outline.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/circle-outline.ts#L1"
 				}
 			]
 		},
@@ -2819,7 +2819,7 @@
 									"fileName": "src/rect.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect.ts#L23"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect.ts#L23"
 								}
 							],
 							"signatures": [
@@ -4032,9 +4032,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect.ts",
-									"line": 44,
+									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect.ts#L44"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect.ts#L45"
 								}
 							],
 							"signatures": [
@@ -4048,7 +4048,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Draw the rectangle."
+												"text": "Draw the rectangle.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -4175,7 +4175,7 @@
 							"fileName": "src/rect.ts",
 							"line": 15,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect.ts#L15"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect.ts#L15"
 						}
 					],
 					"extendedTypes": [
@@ -4201,7 +4201,7 @@
 					"fileName": "src/rect.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect.ts#L1"
 				}
 			]
 		},
@@ -4239,7 +4239,7 @@
 									"fileName": "src/rect-outline.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect-outline.ts#L23"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect-outline.ts#L23"
 								}
 							],
 							"signatures": [
@@ -5472,9 +5472,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect-outline.ts",
-									"line": 62,
+									"line": 63,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect-outline.ts#L62"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect-outline.ts#L63"
 								}
 							],
 							"signatures": [
@@ -5488,7 +5488,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Draw the rectangle outline."
+												"text": "Draw the rectangle outline.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -5615,7 +5615,7 @@
 							"fileName": "src/rect-outline.ts",
 							"line": 14,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect-outline.ts#L14"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect-outline.ts#L14"
 						}
 					],
 					"extendedTypes": [
@@ -5641,7 +5641,7 @@
 					"fileName": "src/rect-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/4e5b078/src/rect-outline.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/a728e56/src/rect-outline.ts#L1"
 				}
 			]
 		}
