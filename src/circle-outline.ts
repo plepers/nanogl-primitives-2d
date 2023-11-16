@@ -3,12 +3,15 @@ import { GLContext } from 'nanogl/types';
 
 
 /**
- * Create an outlined circle geometry
- * @public
+ * This class manages a basic circle outline geometry.
  */
 export default class CircleOutline extends GLArrayBuffer {
-
-
+  /**
+   * @param gl The webgl context this CircleOutline belongs to
+   * @param radius The radius of the circle outline
+   * @param segs The number of segments of the circle outline
+   * @param thickness The thickness of the outline
+   */
   constructor(gl: GLContext, radius: number = 1.0, segs: number = 32, thickness: number = 0.1) {
 
     super( gl );
@@ -46,7 +49,7 @@ export default class CircleOutline extends GLArrayBuffer {
 
 
   /**
-   * Render the outlined circle
+   * Draw the circle outline.
    */
   render() {
     this.drawTriangleStrip();

@@ -10,13 +10,18 @@ const TMP_ARRAY = new Float32Array( [
 
 
 /**
- * Create a rectangle geometry
- * @public
+ * This class manages a basic rectangle geometry.
  */
 export default class Rect extends GLArrayBuffer {
-  
+  /**
+   * @param gl The webgl context this Rect belongs to
+   * @param x The x position of the rectangle
+   * @param y The y position of the rectangle
+   * @param w The width of the rectangle
+   * @param h The height of the rectangle
+   */
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2 ){
-    
+
     super( gl );
 
     const a = TMP_ARRAY;
@@ -34,7 +39,7 @@ export default class Rect extends GLArrayBuffer {
 
 
   /**
-   * Render the rectangle
+   * Draw the rectangle.
    */
   render(){
     this.drawTriangleStrip();

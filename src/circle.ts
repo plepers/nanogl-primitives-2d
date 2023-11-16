@@ -3,11 +3,14 @@ import { GLContext } from 'nanogl/types';
 
 
 /**
- * Creates a circle geometry
- * @public
+ * This class manages a basic circle geometry.
  */
 export default class Circle extends GLArrayBuffer {
-
+  /**
+   * @param gl The webgl context this Circle belongs to
+   * @param radius The radius of the circle
+   * @param segs The number of segments of the circle
+   */
   constructor( gl : GLContext, radius : number = 1.0, segs : number = 32 ){
 
     super( gl );
@@ -36,7 +39,7 @@ export default class Circle extends GLArrayBuffer {
 
 
   /**
-   * Render the circle
+   * Draw the circle.
    */
   render(){
     this.drawTriangleFan();
