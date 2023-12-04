@@ -8,8 +8,18 @@ TMP_ARRAY[33] = TMP_ARRAY[23] = 1;
 TMP_ARRAY[ 4] = TMP_ARRAY[14] = TMP_ARRAY[24] = TMP_ARRAY[34] = TMP_ARRAY[44] = 1;
 
 
+/**
+ * This class manages a basic rectangle outline geometry.
+ */
 export default class RectOutline extends GLArrayBuffer {
-
+  /**
+   * @param gl The webgl context this RectOutline belongs to
+   * @param x The x position of the rectangle outline
+   * @param y The y position of the rectangle outline
+   * @param w The width of the rectangle outline
+   * @param h The height of the rectangle outline
+   * @param thickness The thickness of the outline
+   */
   constructor( gl : GLContext, x : number = -1, y : number = -1, w : number = 2, h : number = 2, thickness : number = .1 ){
 
     super( gl );
@@ -46,9 +56,12 @@ export default class RectOutline extends GLArrayBuffer {
 
   }
 
+  /**
+   * Draw the rectangle outline.
+   * You need to link a program before calling this method.
+   */
   render(){
     this.drawTriangleStrip();
   }
 
 }
-

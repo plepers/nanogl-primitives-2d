@@ -1,0 +1,5660 @@
+{
+	"id": 0,
+	"name": "nanogl-primitives-2d",
+	"kind": 1,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 73,
+			"name": "circle",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 74,
+					"name": "Circle",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class manages a basic circle geometry."
+							}
+						]
+					},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 75,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/circle.ts",
+									"line": 14,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L14"
+								}
+							],
+							"signatures": [
+								{
+									"id": 76,
+									"name": "new Circle",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 77,
+											"name": "gl",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this Circle belongs to"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"name": "GLContext",
+												"qualifiedName": "GLContext",
+												"package": "nanogl"
+											}
+										},
+										{
+											"id": 78,
+											"name": "radius",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The radius of the circle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "1.0"
+										},
+										{
+											"id": 79,
+											"name": "segs",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The number of segments of the circle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "32"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 74,
+										"name": "default"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "GLArrayBuffer.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "GLArrayBuffer.constructor"
+							}
+						},
+						{
+							"id": 88,
+							"name": "attribs",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 18,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "AttributeDef",
+									"qualifiedName": "AttributeDef",
+									"package": "nanogl"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribs"
+							}
+						},
+						{
+							"id": 83,
+							"name": "buffer",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "WebGLBuffer",
+								"qualifiedName": "WebGLBuffer",
+								"package": "typescript"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.buffer"
+							}
+						},
+						{
+							"id": 86,
+							"name": "byteLength",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.byteLength"
+							}
+						},
+						{
+							"id": 82,
+							"name": "gl",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "GLContext",
+								"qualifiedName": "GLContext",
+								"package": "nanogl"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.gl"
+							}
+						},
+						{
+							"id": 87,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 17,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.length"
+							}
+						},
+						{
+							"id": 85,
+							"name": "stride",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 15,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.stride"
+							}
+						},
+						{
+							"id": 84,
+							"name": "usage",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 14,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.usage"
+							}
+						},
+						{
+							"id": 114,
+							"name": "_computeLength",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 27,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 115,
+									"name": "_computeLength",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer._computeLength"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer._computeLength"
+							}
+						},
+						{
+							"id": 91,
+							"name": "attrib",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 21,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 92,
+									"name": "attrib",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 93,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 94,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 95,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 96,
+											"name": "normalize",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 74,
+										"name": "default"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attrib"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attrib"
+							}
+						},
+						{
+							"id": 104,
+							"name": "attribPointer",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 24,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 105,
+									"name": "attribPointer",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 106,
+											"name": "program",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Program",
+												"qualifiedName": "Program",
+												"package": "nanogl"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attribPointer"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribPointer"
+							}
+						},
+						{
+							"id": 89,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 20,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 90,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.bind"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.bind"
+							}
+						},
+						{
+							"id": 97,
+							"name": "data",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 22,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 98,
+									"name": "data",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 99,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "number"
+													},
+													{
+														"type": "reference",
+														"name": "BufferSource",
+														"qualifiedName": "BufferSource",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.data"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.data"
+							}
+						},
+						{
+							"id": 112,
+							"name": "dispose",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 113,
+									"name": "dispose",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.dispose"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.dispose"
+							}
+						},
+						{
+							"id": 107,
+							"name": "draw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 25,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 108,
+									"name": "draw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 109,
+											"name": "mode",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 110,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 111,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.draw"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.draw"
+							}
+						},
+						{
+							"id": 124,
+							"name": "drawLineLoop",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 9,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 125,
+									"name": "drawLineLoop",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 126,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 127,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineLoop"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineLoop"
+							}
+						},
+						{
+							"id": 128,
+							"name": "drawLineStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 10,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 129,
+									"name": "drawLineStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 130,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 131,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineStrip"
+							}
+						},
+						{
+							"id": 120,
+							"name": "drawLines",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 8,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 121,
+									"name": "drawLines",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 122,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 123,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLines"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLines"
+							}
+						},
+						{
+							"id": 116,
+							"name": "drawPoints",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 7,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 117,
+									"name": "drawPoints",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 118,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 119,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawPoints"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawPoints"
+							}
+						},
+						{
+							"id": 140,
+							"name": "drawTriangleFan",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 141,
+									"name": "drawTriangleFan",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 142,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 143,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleFan"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleFan"
+							}
+						},
+						{
+							"id": 136,
+							"name": "drawTriangleStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 137,
+									"name": "drawTriangleStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 138,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 139,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleStrip"
+							}
+						},
+						{
+							"id": 132,
+							"name": "drawTriangles",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 11,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 133,
+									"name": "drawTriangles",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 134,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 135,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangles"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangles"
+							}
+						},
+						{
+							"id": 80,
+							"name": "render",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/circle.ts",
+									"line": 45,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L45"
+								}
+							],
+							"signatures": [
+								{
+									"id": 81,
+									"name": "render",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Draw the circle.\nYou need to link a program before calling this method."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 100,
+							"name": "subData",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 23,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 101,
+									"name": "subData",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 102,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "BufferSource",
+												"qualifiedName": "BufferSource",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 103,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.subData"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.subData"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								75
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								88,
+								83,
+								86,
+								82,
+								87,
+								85,
+								84
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								114,
+								91,
+								104,
+								89,
+								97,
+								112,
+								107,
+								124,
+								128,
+								120,
+								116,
+								140,
+								136,
+								132,
+								80,
+								100
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/circle.ts",
+							"line": 8,
+							"character": 21,
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L8"
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ArrayBuffer",
+							"qualifiedName": "ArrayBuffer",
+							"package": "nanogl"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						74
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/circle.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "circle-outline",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "CircleOutline",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class manages a basic circle outline geometry."
+							}
+						]
+					},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 3,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/circle-outline.ts",
+									"line": 15,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L15"
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "new CircleOutline",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 5,
+											"name": "gl",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this CircleOutline belongs to"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"name": "GLContext",
+												"qualifiedName": "GLContext",
+												"package": "nanogl"
+											}
+										},
+										{
+											"id": 6,
+											"name": "radius",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The radius of the circle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "1.0"
+										},
+										{
+											"id": 7,
+											"name": "segs",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The number of segments of the circle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "32"
+										},
+										{
+											"id": 8,
+											"name": "thickness",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The thickness of the outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "0.1"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "default"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "GLArrayBuffer.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "GLArrayBuffer.constructor"
+							}
+						},
+						{
+							"id": 17,
+							"name": "attribs",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 18,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "AttributeDef",
+									"qualifiedName": "AttributeDef",
+									"package": "nanogl"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribs"
+							}
+						},
+						{
+							"id": 12,
+							"name": "buffer",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "WebGLBuffer",
+								"qualifiedName": "WebGLBuffer",
+								"package": "typescript"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.buffer"
+							}
+						},
+						{
+							"id": 15,
+							"name": "byteLength",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.byteLength"
+							}
+						},
+						{
+							"id": 11,
+							"name": "gl",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "GLContext",
+								"qualifiedName": "GLContext",
+								"package": "nanogl"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.gl"
+							}
+						},
+						{
+							"id": 16,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 17,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.length"
+							}
+						},
+						{
+							"id": 14,
+							"name": "stride",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 15,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.stride"
+							}
+						},
+						{
+							"id": 13,
+							"name": "usage",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 14,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.usage"
+							}
+						},
+						{
+							"id": 43,
+							"name": "_computeLength",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 27,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 44,
+									"name": "_computeLength",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer._computeLength"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer._computeLength"
+							}
+						},
+						{
+							"id": 20,
+							"name": "attrib",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 21,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 21,
+									"name": "attrib",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 22,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 23,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 24,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 25,
+											"name": "normalize",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "default"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attrib"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attrib"
+							}
+						},
+						{
+							"id": 33,
+							"name": "attribPointer",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 24,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 34,
+									"name": "attribPointer",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 35,
+											"name": "program",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Program",
+												"qualifiedName": "Program",
+												"package": "nanogl"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attribPointer"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribPointer"
+							}
+						},
+						{
+							"id": 18,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 20,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 19,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.bind"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.bind"
+							}
+						},
+						{
+							"id": 26,
+							"name": "data",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 22,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 27,
+									"name": "data",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 28,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "number"
+													},
+													{
+														"type": "reference",
+														"name": "BufferSource",
+														"qualifiedName": "BufferSource",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.data"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.data"
+							}
+						},
+						{
+							"id": 41,
+							"name": "dispose",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 42,
+									"name": "dispose",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.dispose"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.dispose"
+							}
+						},
+						{
+							"id": 36,
+							"name": "draw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 25,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 37,
+									"name": "draw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 38,
+											"name": "mode",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 39,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 40,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.draw"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.draw"
+							}
+						},
+						{
+							"id": 53,
+							"name": "drawLineLoop",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 9,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 54,
+									"name": "drawLineLoop",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 55,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 56,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineLoop"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineLoop"
+							}
+						},
+						{
+							"id": 57,
+							"name": "drawLineStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 10,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 58,
+									"name": "drawLineStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 59,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 60,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineStrip"
+							}
+						},
+						{
+							"id": 49,
+							"name": "drawLines",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 8,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 50,
+									"name": "drawLines",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 51,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 52,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLines"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLines"
+							}
+						},
+						{
+							"id": 45,
+							"name": "drawPoints",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 7,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 46,
+									"name": "drawPoints",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 47,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 48,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawPoints"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawPoints"
+							}
+						},
+						{
+							"id": 69,
+							"name": "drawTriangleFan",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 70,
+									"name": "drawTriangleFan",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 71,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 72,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleFan"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleFan"
+							}
+						},
+						{
+							"id": 65,
+							"name": "drawTriangleStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 66,
+									"name": "drawTriangleStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 67,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 68,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleStrip"
+							}
+						},
+						{
+							"id": 61,
+							"name": "drawTriangles",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 11,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 62,
+									"name": "drawTriangles",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 63,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 64,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangles"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangles"
+							}
+						},
+						{
+							"id": 9,
+							"name": "render",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/circle-outline.ts",
+									"line": 55,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L55"
+								}
+							],
+							"signatures": [
+								{
+									"id": 10,
+									"name": "render",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Draw the circle outline.\nYou need to link a program before calling this method."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 29,
+							"name": "subData",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 23,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 30,
+									"name": "subData",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 31,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "BufferSource",
+												"qualifiedName": "BufferSource",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 32,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.subData"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.subData"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								3
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								17,
+								12,
+								15,
+								11,
+								16,
+								14,
+								13
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								43,
+								20,
+								33,
+								18,
+								26,
+								41,
+								36,
+								53,
+								57,
+								49,
+								45,
+								69,
+								65,
+								61,
+								9,
+								29
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/circle-outline.ts",
+							"line": 8,
+							"character": 21,
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L8"
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ArrayBuffer",
+							"qualifiedName": "ArrayBuffer",
+							"package": "nanogl"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/circle-outline.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 218,
+			"name": "rect",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 219,
+					"name": "Rect",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class manages a basic rectangle geometry."
+							}
+						]
+					},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 220,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/rect.ts",
+									"line": 23,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L23"
+								}
+							],
+							"signatures": [
+								{
+									"id": 221,
+									"name": "new Rect",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 222,
+											"name": "gl",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this Rect belongs to"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"name": "GLContext",
+												"qualifiedName": "GLContext",
+												"package": "nanogl"
+											}
+										},
+										{
+											"id": 223,
+											"name": "x",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The x position of the rectangle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "-1"
+										},
+										{
+											"id": 224,
+											"name": "y",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The y position of the rectangle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "-1"
+										},
+										{
+											"id": 225,
+											"name": "w",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The width of the rectangle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "2"
+										},
+										{
+											"id": 226,
+											"name": "h",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The height of the rectangle"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "2"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 219,
+										"name": "default"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "GLArrayBuffer.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "GLArrayBuffer.constructor"
+							}
+						},
+						{
+							"id": 235,
+							"name": "attribs",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 18,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "AttributeDef",
+									"qualifiedName": "AttributeDef",
+									"package": "nanogl"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribs"
+							}
+						},
+						{
+							"id": 230,
+							"name": "buffer",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "WebGLBuffer",
+								"qualifiedName": "WebGLBuffer",
+								"package": "typescript"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.buffer"
+							}
+						},
+						{
+							"id": 233,
+							"name": "byteLength",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.byteLength"
+							}
+						},
+						{
+							"id": 229,
+							"name": "gl",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "GLContext",
+								"qualifiedName": "GLContext",
+								"package": "nanogl"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.gl"
+							}
+						},
+						{
+							"id": 234,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 17,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.length"
+							}
+						},
+						{
+							"id": 232,
+							"name": "stride",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 15,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.stride"
+							}
+						},
+						{
+							"id": 231,
+							"name": "usage",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 14,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.usage"
+							}
+						},
+						{
+							"id": 261,
+							"name": "_computeLength",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 27,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 262,
+									"name": "_computeLength",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer._computeLength"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer._computeLength"
+							}
+						},
+						{
+							"id": 238,
+							"name": "attrib",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 21,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 239,
+									"name": "attrib",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 240,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 241,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 242,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 243,
+											"name": "normalize",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 219,
+										"name": "default"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attrib"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attrib"
+							}
+						},
+						{
+							"id": 251,
+							"name": "attribPointer",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 24,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 252,
+									"name": "attribPointer",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 253,
+											"name": "program",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Program",
+												"qualifiedName": "Program",
+												"package": "nanogl"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attribPointer"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribPointer"
+							}
+						},
+						{
+							"id": 236,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 20,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 237,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.bind"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.bind"
+							}
+						},
+						{
+							"id": 244,
+							"name": "data",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 22,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 245,
+									"name": "data",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 246,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "number"
+													},
+													{
+														"type": "reference",
+														"name": "BufferSource",
+														"qualifiedName": "BufferSource",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.data"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.data"
+							}
+						},
+						{
+							"id": 259,
+							"name": "dispose",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 260,
+									"name": "dispose",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.dispose"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.dispose"
+							}
+						},
+						{
+							"id": 254,
+							"name": "draw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 25,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 255,
+									"name": "draw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 256,
+											"name": "mode",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 257,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 258,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.draw"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.draw"
+							}
+						},
+						{
+							"id": 271,
+							"name": "drawLineLoop",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 9,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 272,
+									"name": "drawLineLoop",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 273,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 274,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineLoop"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineLoop"
+							}
+						},
+						{
+							"id": 275,
+							"name": "drawLineStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 10,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 276,
+									"name": "drawLineStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 277,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 278,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineStrip"
+							}
+						},
+						{
+							"id": 267,
+							"name": "drawLines",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 8,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 268,
+									"name": "drawLines",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 269,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 270,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLines"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLines"
+							}
+						},
+						{
+							"id": 263,
+							"name": "drawPoints",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 7,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 264,
+									"name": "drawPoints",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 265,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 266,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawPoints"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawPoints"
+							}
+						},
+						{
+							"id": 287,
+							"name": "drawTriangleFan",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 288,
+									"name": "drawTriangleFan",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 289,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 290,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleFan"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleFan"
+							}
+						},
+						{
+							"id": 283,
+							"name": "drawTriangleStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 284,
+									"name": "drawTriangleStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 285,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 286,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleStrip"
+							}
+						},
+						{
+							"id": 279,
+							"name": "drawTriangles",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 11,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 280,
+									"name": "drawTriangles",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 281,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 282,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangles"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangles"
+							}
+						},
+						{
+							"id": 227,
+							"name": "render",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/rect.ts",
+									"line": 45,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L45"
+								}
+							],
+							"signatures": [
+								{
+									"id": 228,
+									"name": "render",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Draw the rectangle.\nYou need to link a program before calling this method."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 247,
+							"name": "subData",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 23,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 248,
+									"name": "subData",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 249,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "BufferSource",
+												"qualifiedName": "BufferSource",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 250,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.subData"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.subData"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								220
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								235,
+								230,
+								233,
+								229,
+								234,
+								232,
+								231
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								261,
+								238,
+								251,
+								236,
+								244,
+								259,
+								254,
+								271,
+								275,
+								267,
+								263,
+								287,
+								283,
+								279,
+								227,
+								247
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/rect.ts",
+							"line": 15,
+							"character": 21,
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L15"
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ArrayBuffer",
+							"qualifiedName": "ArrayBuffer",
+							"package": "nanogl"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						219
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/rect.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 144,
+			"name": "rect-outline",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 145,
+					"name": "RectOutline",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class manages a basic rectangle outline geometry."
+							}
+						]
+					},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 146,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/rect-outline.ts",
+									"line": 23,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L23"
+								}
+							],
+							"signatures": [
+								{
+									"id": 147,
+									"name": "new RectOutline",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 148,
+											"name": "gl",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this RectOutline belongs to"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"name": "GLContext",
+												"qualifiedName": "GLContext",
+												"package": "nanogl"
+											}
+										},
+										{
+											"id": 149,
+											"name": "x",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The x position of the rectangle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "-1"
+										},
+										{
+											"id": 150,
+											"name": "y",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The y position of the rectangle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "-1"
+										},
+										{
+											"id": 151,
+											"name": "w",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The width of the rectangle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "2"
+										},
+										{
+											"id": 152,
+											"name": "h",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The height of the rectangle outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "2"
+										},
+										{
+											"id": 153,
+											"name": "thickness",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The thickness of the outline"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": ".1"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 145,
+										"name": "default"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "GLArrayBuffer.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "GLArrayBuffer.constructor"
+							}
+						},
+						{
+							"id": 162,
+							"name": "attribs",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 18,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "AttributeDef",
+									"qualifiedName": "AttributeDef",
+									"package": "nanogl"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribs"
+							}
+						},
+						{
+							"id": 157,
+							"name": "buffer",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "WebGLBuffer",
+								"qualifiedName": "WebGLBuffer",
+								"package": "typescript"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.buffer"
+							}
+						},
+						{
+							"id": 160,
+							"name": "byteLength",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.byteLength"
+							}
+						},
+						{
+							"id": 156,
+							"name": "gl",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "GLContext",
+								"qualifiedName": "GLContext",
+								"package": "nanogl"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.gl"
+							}
+						},
+						{
+							"id": 161,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 17,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.length"
+							}
+						},
+						{
+							"id": 159,
+							"name": "stride",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 15,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.stride"
+							}
+						},
+						{
+							"id": 158,
+							"name": "usage",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 14,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.usage"
+							}
+						},
+						{
+							"id": 188,
+							"name": "_computeLength",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 27,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 189,
+									"name": "_computeLength",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer._computeLength"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer._computeLength"
+							}
+						},
+						{
+							"id": 165,
+							"name": "attrib",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 21,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 166,
+									"name": "attrib",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 167,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 168,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 169,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 170,
+											"name": "normalize",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 145,
+										"name": "default"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attrib"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attrib"
+							}
+						},
+						{
+							"id": 178,
+							"name": "attribPointer",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 24,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 179,
+									"name": "attribPointer",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 180,
+											"name": "program",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Program",
+												"qualifiedName": "Program",
+												"package": "nanogl"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.attribPointer"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.attribPointer"
+							}
+						},
+						{
+							"id": 163,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 20,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 164,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.bind"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.bind"
+							}
+						},
+						{
+							"id": 171,
+							"name": "data",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 22,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 172,
+									"name": "data",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 173,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "number"
+													},
+													{
+														"type": "reference",
+														"name": "BufferSource",
+														"qualifiedName": "BufferSource",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.data"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.data"
+							}
+						},
+						{
+							"id": 186,
+							"name": "dispose",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 187,
+									"name": "dispose",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.dispose"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.dispose"
+							}
+						},
+						{
+							"id": 181,
+							"name": "draw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 25,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 182,
+									"name": "draw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 183,
+											"name": "mode",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 184,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 185,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.draw"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.draw"
+							}
+						},
+						{
+							"id": 198,
+							"name": "drawLineLoop",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 9,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 199,
+									"name": "drawLineLoop",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 200,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 201,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineLoop"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineLoop"
+							}
+						},
+						{
+							"id": 202,
+							"name": "drawLineStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 10,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 203,
+									"name": "drawLineStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 204,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 205,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLineStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLineStrip"
+							}
+						},
+						{
+							"id": 194,
+							"name": "drawLines",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 8,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 195,
+									"name": "drawLines",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 196,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 197,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawLines"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawLines"
+							}
+						},
+						{
+							"id": 190,
+							"name": "drawPoints",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 7,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 191,
+									"name": "drawPoints",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 192,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 193,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawPoints"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawPoints"
+							}
+						},
+						{
+							"id": 214,
+							"name": "drawTriangleFan",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 13,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 215,
+									"name": "drawTriangleFan",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 216,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 217,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleFan"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleFan"
+							}
+						},
+						{
+							"id": 210,
+							"name": "drawTriangleStrip",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 12,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 211,
+									"name": "drawTriangleStrip",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 212,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 213,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangleStrip"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangleStrip"
+							}
+						},
+						{
+							"id": 206,
+							"name": "drawTriangles",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/basebuffer.d.ts",
+									"line": 11,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 207,
+									"name": "drawTriangles",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 208,
+											"name": "count",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 209,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.drawTriangles"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.drawTriangles"
+							}
+						},
+						{
+							"id": 154,
+							"name": "render",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/rect-outline.ts",
+									"line": 63,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L63"
+								}
+							],
+							"signatures": [
+								{
+									"id": 155,
+									"name": "render",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Draw the rectangle outline.\nYou need to link a program before calling this method."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 174,
+							"name": "subData",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl/arraybuffer.d.ts",
+									"line": 23,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 175,
+									"name": "subData",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 176,
+											"name": "array",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "BufferSource",
+												"qualifiedName": "BufferSource",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 177,
+											"name": "offset",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "GLArrayBuffer.subData"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "GLArrayBuffer.subData"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								146
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								162,
+								157,
+								160,
+								156,
+								161,
+								159,
+								158
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								188,
+								165,
+								178,
+								163,
+								171,
+								186,
+								181,
+								198,
+								202,
+								194,
+								190,
+								214,
+								210,
+								206,
+								154,
+								174
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/rect-outline.ts",
+							"line": 14,
+							"character": 21,
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L14"
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ArrayBuffer",
+							"qualifiedName": "ArrayBuffer",
+							"package": "nanogl"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						145
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/rect-outline.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				73,
+				1,
+				218,
+				144
+			]
+		}
+	]
+}
