@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.ACTIONS_KEY }}
+          github-token: ${{ secrets.DOCS_ACTION_TOKEN }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'plepers',
+              owner: 'evanmartiin',
               repo: 'nanogl-docs',
               workflow_id: 'main.yml',
               ref: 'main'
