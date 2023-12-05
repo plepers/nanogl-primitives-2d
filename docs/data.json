@@ -39,7 +39,7 @@
 									"fileName": "src/circle.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle.ts#L14"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle.ts#L14"
 								}
 							],
 							"signatures": [
@@ -1214,7 +1214,7 @@
 									"fileName": "src/circle.ts",
 									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle.ts#L45"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle.ts#L45"
 								}
 							],
 							"signatures": [
@@ -1355,7 +1355,7 @@
 							"fileName": "src/circle.ts",
 							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle.ts#L8"
+							"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -1381,7 +1381,7 @@
 					"fileName": "src/circle.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle.ts#L1"
+					"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle.ts#L1"
 				}
 			]
 		},
@@ -1419,7 +1419,7 @@
 									"fileName": "src/circle-outline.ts",
 									"line": 15,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle-outline.ts#L15"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle-outline.ts#L15"
 								}
 							],
 							"signatures": [
@@ -2614,7 +2614,7 @@
 									"fileName": "src/circle-outline.ts",
 									"line": 55,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle-outline.ts#L55"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle-outline.ts#L55"
 								}
 							],
 							"signatures": [
@@ -2755,7 +2755,7 @@
 							"fileName": "src/circle-outline.ts",
 							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle-outline.ts#L8"
+							"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle-outline.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -2781,7 +2781,7 @@
 					"fileName": "src/circle-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/circle-outline.ts#L1"
+					"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/circle-outline.ts#L1"
 				}
 			]
 		},
@@ -2819,7 +2819,7 @@
 									"fileName": "src/rect.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect.ts#L23"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect.ts#L23"
 								}
 							],
 							"signatures": [
@@ -4034,7 +4034,7 @@
 									"fileName": "src/rect.ts",
 									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect.ts#L45"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect.ts#L45"
 								}
 							],
 							"signatures": [
@@ -4175,7 +4175,7 @@
 							"fileName": "src/rect.ts",
 							"line": 15,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect.ts#L15"
+							"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect.ts#L15"
 						}
 					],
 					"extendedTypes": [
@@ -4201,7 +4201,7 @@
 					"fileName": "src/rect.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect.ts#L1"
+					"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect.ts#L1"
 				}
 			]
 		},
@@ -4239,7 +4239,7 @@
 									"fileName": "src/rect-outline.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect-outline.ts#L23"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect-outline.ts#L23"
 								}
 							],
 							"signatures": [
@@ -5474,7 +5474,7 @@
 									"fileName": "src/rect-outline.ts",
 									"line": 63,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect-outline.ts#L63"
+									"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect-outline.ts#L63"
 								}
 							],
 							"signatures": [
@@ -5615,7 +5615,7 @@
 							"fileName": "src/rect-outline.ts",
 							"line": 14,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect-outline.ts#L14"
+							"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect-outline.ts#L14"
 						}
 					],
 					"extendedTypes": [
@@ -5641,7 +5641,7 @@
 					"fileName": "src/rect-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/bc27d70/src/rect-outline.ts#L1"
+					"url": "https://github.com/plepers/nanogl-primitives-2d/blob/d8b4d61/src/rect-outline.ts#L1"
 				}
 			]
 		}
