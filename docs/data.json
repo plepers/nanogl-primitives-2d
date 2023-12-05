@@ -17,14 +17,12 @@
 					"name": "Circle",
 					"kind": 128,
 					"kindString": "Class",
-					"flags": {
-						"isPublic": true
-					},
+					"flags": {},
 					"comment": {
 						"summary": [
 							{
 								"kind": "text",
-								"text": "Creates a circle geometry"
+								"text": "This class manages a basic circle geometry."
 							}
 						]
 					},
@@ -39,9 +37,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle.ts",
-									"line": 11,
+									"line": 14,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle.ts#L11"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L14"
 								}
 							],
 							"signatures": [
@@ -58,6 +56,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this Circle belongs to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "GLContext",
@@ -71,6 +77,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The radius of the circle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -83,6 +97,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The number of segments of the circle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -1190,9 +1212,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle.ts",
-									"line": 41,
+									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle.ts#L41"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L45"
 								}
 							],
 							"signatures": [
@@ -1206,7 +1228,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Render the circle"
+												"text": "Draw the circle.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -1331,9 +1353,9 @@
 					"sources": [
 						{
 							"fileName": "src/circle.ts",
-							"line": 9,
+							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle.ts#L9"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -1359,7 +1381,7 @@
 					"fileName": "src/circle.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle.ts#L1"
 				}
 			]
 		},
@@ -1375,14 +1397,12 @@
 					"name": "CircleOutline",
 					"kind": 128,
 					"kindString": "Class",
-					"flags": {
-						"isPublic": true
-					},
+					"flags": {},
 					"comment": {
 						"summary": [
 							{
 								"kind": "text",
-								"text": "Create an outlined circle geometry"
+								"text": "This class manages a basic circle outline geometry."
 							}
 						]
 					},
@@ -1397,9 +1417,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle-outline.ts",
-									"line": 12,
+									"line": 15,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle-outline.ts#L12"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L15"
 								}
 							],
 							"signatures": [
@@ -1416,6 +1436,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this CircleOutline belongs to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "GLContext",
@@ -1429,6 +1457,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The radius of the circle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -1441,6 +1477,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The number of segments of the circle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -1453,6 +1497,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The thickness of the outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2560,9 +2612,9 @@
 							"sources": [
 								{
 									"fileName": "src/circle-outline.ts",
-									"line": 51,
+									"line": 55,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle-outline.ts#L51"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L55"
 								}
 							],
 							"signatures": [
@@ -2576,7 +2628,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Render the outlined circle"
+												"text": "Draw the circle outline.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -2701,9 +2753,9 @@
 					"sources": [
 						{
 							"fileName": "src/circle-outline.ts",
-							"line": 9,
+							"line": 8,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle-outline.ts#L9"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L8"
 						}
 					],
 					"extendedTypes": [
@@ -2729,7 +2781,7 @@
 					"fileName": "src/circle-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/circle-outline.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/circle-outline.ts#L1"
 				}
 			]
 		},
@@ -2745,14 +2797,12 @@
 					"name": "Rect",
 					"kind": 128,
 					"kindString": "Class",
-					"flags": {
-						"isPublic": true
-					},
+					"flags": {},
 					"comment": {
 						"summary": [
 							{
 								"kind": "text",
-								"text": "Create a rectangle geometry"
+								"text": "This class manages a basic rectangle geometry."
 							}
 						]
 					},
@@ -2767,9 +2817,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect.ts",
-									"line": 18,
+									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L23"
 								}
 							],
 							"signatures": [
@@ -2786,6 +2836,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this Rect belongs to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "GLContext",
@@ -2799,6 +2857,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The x position of the rectangle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2811,6 +2877,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The y position of the rectangle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2823,6 +2897,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The width of the rectangle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2835,6 +2917,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The height of the rectangle"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -3942,9 +4032,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect.ts",
-									"line": 39,
+									"line": 45,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect.ts#L39"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L45"
 								}
 							],
 							"signatures": [
@@ -3958,7 +4048,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Render the rectangle"
+												"text": "Draw the rectangle.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -4083,9 +4173,9 @@
 					"sources": [
 						{
 							"fileName": "src/rect.ts",
-							"line": 16,
+							"line": 15,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect.ts#L16"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L15"
 						}
 					],
 					"extendedTypes": [
@@ -4111,7 +4201,7 @@
 					"fileName": "src/rect.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect.ts#L1"
 				}
 			]
 		},
@@ -4127,14 +4217,12 @@
 					"name": "RectOutline",
 					"kind": 128,
 					"kindString": "Class",
-					"flags": {
-						"isPublic": true
-					},
+					"flags": {},
 					"comment": {
 						"summary": [
 							{
 								"kind": "text",
-								"text": "Create an outlined rectangle geometry"
+								"text": "This class manages a basic rectangle outline geometry."
 							}
 						]
 					},
@@ -4149,9 +4237,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect-outline.ts",
-									"line": 17,
+									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect-outline.ts#L17"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L23"
 								}
 							],
 							"signatures": [
@@ -4168,6 +4256,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The webgl context this RectOutline belongs to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "GLContext",
@@ -4181,6 +4277,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The x position of the rectangle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -4193,6 +4297,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The y position of the rectangle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -4205,6 +4317,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The width of the rectangle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -4217,6 +4337,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The height of the rectangle outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -4229,6 +4357,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The thickness of the outline"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -5336,9 +5472,9 @@
 							"sources": [
 								{
 									"fileName": "src/rect-outline.ts",
-									"line": 56,
+									"line": 63,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect-outline.ts#L56"
+									"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L63"
 								}
 							],
 							"signatures": [
@@ -5352,7 +5488,7 @@
 										"summary": [
 											{
 												"kind": "text",
-												"text": "Render the outlined rectangle"
+												"text": "Draw the rectangle outline.\nYou need to link a program before calling this method."
 											}
 										]
 									},
@@ -5477,9 +5613,9 @@
 					"sources": [
 						{
 							"fileName": "src/rect-outline.ts",
-							"line": 15,
+							"line": 14,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect-outline.ts#L15"
+							"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L14"
 						}
 					],
 					"extendedTypes": [
@@ -5505,7 +5641,7 @@
 					"fileName": "src/rect-outline.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/530c867/src/rect-outline.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-primitives-2d/blob/ce8998f/src/rect-outline.ts#L1"
 				}
 			]
 		}
